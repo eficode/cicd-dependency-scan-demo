@@ -53,8 +53,7 @@ pipeline {
                         dir("example-projects/eShopOnWeb") {
                             // If you have the Jenkins snyk plugin installed then it can be used as below.
                             //snykSecurity failOnIssues: false, snykInstallation: 'snyk', snykTokenId: 'token-snyk', targetFile: 'eShopOnWeb.sln'
-                            snykSecurity organisation: 'Eficode', 
-                                projectName: 'eShopOnWeb', 
+                            snykSecurity organisation: 'Eficode',
                                 severity: 'high', 
                                 snykInstallation: 'snyk-auto', 
                                 snykTokenId: 'token-snyk', 
