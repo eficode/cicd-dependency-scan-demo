@@ -34,7 +34,7 @@ pipelineJob("dependency-checks") {
 
 listView("Dependency Checks") {
     jobs {
-        regex('(dependency-checks-).*')
+        regex('(dependency-checks)-.*')
     }
     columns {
         status()

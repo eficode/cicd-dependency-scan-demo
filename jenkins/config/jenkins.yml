@@ -19,8 +19,7 @@ jenkins:
   views:
   - all:
       name: "all"
-  
-  # Security Configurations
+
   securityRealm:
     local:
       allowsSignup: false
@@ -63,6 +62,12 @@ unclassified:
   location:
     url: http://jenkins.local.net
 
+# Security Configurations
+security:
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: false
+
+# Seed Job
 jobs:
   - script: |
       job('seed') {
