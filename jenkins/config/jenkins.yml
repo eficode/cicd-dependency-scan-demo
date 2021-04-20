@@ -28,73 +28,12 @@ jenkins:
       - id: ${JENKINS_ADMIN_USER}
         password: ${JENKINS_ADMIN_PASSWORD}
 
-  #crumbIssuer: 
-  #  standard:
-  #     excludeClientIPFromCrumb: false
+  crumbIssuer: 
+    standard:
+       excludeClientIPFromCrumb: false
 
   remotingSecurity:
     enabled: true
- 
-  #authorizationStrategy:
-  #  globalMatrix:
-  #    permissions:
-  #    - "Agent/Build:anonymous"
-  #    - "Agent/Build:authenticated"
-  #    - "Agent/Configure:authenticated"
-  #    - "Agent/Connect:anonymous"
-  #    - "Agent/Connect:authenticated"
-  #    - "Agent/Create:authenticated"
-  #    - "Agent/Delete:authenticated"
-  #    - "Agent/Disconnect:authenticated"
-  #    - "Artifactory/Promote:authenticated"
-  #    - "Artifactory/Release:authenticated"
-  #    - "Credentials/Create:authenticated"
-  #    - "Credentials/Delete:authenticated"
-  #    - "Credentials/ManageDomains:authenticated"
-  #    - "Credentials/Update:authenticated"
-  #    - "Credentials/View:authenticated"
-  #    - "Job/Build:anonymous"
-  #    - "Job/Build:authenticated"
-  #    - "Job/Cancel:anonymous"
-  #    - "Job/Cancel:authenticated"
-  #    - "Job/Configure:anonymous"
-  #    - "Job/Configure:authenticated"
-  #    - "Job/Create:anonymous"
-  #    - "Job/Create:authenticated"
-  #    - "Job/Delete:authenticated"
-  #    - "Job/Discover:anonymous"
-  #    - "Job/Discover:authenticated"
-  #    - "Job/Move:anonymous"
-  #    - "Job/Move:authenticated"
-  #    - "Job/Read:anonymous"
-  #    - "Job/Read:authenticated"
-  #    - "Job/Workspace:anonymous"
-  #    - "Job/Workspace:authenticated"
-  #    - "Lockable Resources/Reserve:authenticated"
-  #    - "Lockable Resources/Unlock:authenticated"
-  #    - "Lockable Resources/View:authenticated"
-  #    - "Metrics/HealthCheck:authenticated"
-  #    - "Metrics/ThreadDump:authenticated"
-  #    - "Metrics/View:authenticated"
-  #    - "Overall/Administer:authenticated"
-  #    - "Overall/Read:anonymous"
-  #    - "Overall/Read:authenticated"
-  #    - "Run/Delete:anonymous"
-  #    - "Run/Delete:authenticated"
-  #    - "Run/Replay:anonymous"
-  #    - "Run/Replay:authenticated"
-  #    - "Run/Update:anonymous"
-  #    - "Run/Update:authenticated"
-  #    - "SCM/Tag:anonymous"
-  #    - "SCM/Tag:authenticated"
-  #    - "View/Configure:anonymous"
-  #    - "View/Configure:authenticated"
-  #    - "View/Create:anonymous"
-  #    - "View/Create:authenticated"
-  #    - "View/Delete:anonymous"
-  #    - "View/Delete:authenticated"
-  #    - "View/Read:anonymous"
-  #    - "View/Read:authenticated"
 
   disableRememberMe: false
 
@@ -114,28 +53,6 @@ tool:
     - home: "/usr/share/maven"
       name: "maven-3.3.9"
 
-  # Can't get JCasC to handle snyk :-(
-  #snyk:
-  #  installations:
-  #  - home: ""
-  #  - name: "snyk"
-  #    properties:
-  #    - installSource:
-  #        installers:
-  #        - snykInstaller:
-  #            #updatePolicyIntervalHours: 24
-  #            #version: "latest"
-
-  #sonarRunnerInstallation:
-  #  installations:
-  #  - name: "sonar-scanner-4.5.0"
-  #    home: ""
-  #    properties:
-  #    - installSource:
-  #        installers:
-  #        - sonarRunnerInstaller:
-  #            id: "4.5.0.2216"
-
   #dependency-check:
   #  installations:
   #  - home: "/usr/bin/dependency-check"
@@ -145,15 +62,6 @@ tool:
 unclassified:
   location:
     url: http://jenkins.local.net
-
-#security:
-#  queueItemAuthenticator:
-#    authenticators:
-#    - global:
-#        strategy: "anonymousAuthorizationStrategy"
-#
-#  GlobalJobDslSecurityConfiguration:
-#    useScriptSecurity: false
 
 jobs:
   - script: |
@@ -165,7 +73,7 @@ jobs:
               name('origin')
               url('https://github.com/eficode/cicd-dependency-scan-demo.git')
             }
-            branch('main')
+            branch('jenkins')
           }
         }
         steps {

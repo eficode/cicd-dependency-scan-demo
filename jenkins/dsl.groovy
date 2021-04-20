@@ -8,15 +8,15 @@ pipelineJob("dependency-checks") {
     keepDependencies(false)
 
     triggers {
-        gitlabPush {
-            buildOnMergeRequestEvents(false)
-            enableCiSkip(false)
-            setBuildDescription(false)
-            rebuildOpenMergeRequest('never')
-        }
+        githubPush()
     }
 
     definition {
+        
+        cps {
+            sandbox()
+        }
+
         cpsScm {
             scm {
                 git {
