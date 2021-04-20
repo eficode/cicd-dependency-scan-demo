@@ -72,6 +72,7 @@ pubsub-light:1.13
 scm-api:2.6.4
 script-security:1.76
 snakeyaml-api:1.27.0
+snyk-security-scanner:2.13.0
 sse-gateway:1.24
 ssh-credentials:1.18.1
 structs:1.22
