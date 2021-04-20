@@ -37,10 +37,12 @@ RUN npm install -g npm-audit-html snyk yarn yarn-audit-html audit-ci
 
 # Install OWASP Dependency Check under Jenkins where the db can be written
 RUN gem install bundle-audit && gem cleanup
-RUN curl --location https://github.com/jeremylong/DependencyCheck/releases/download/v6.1.0/dependency-check-6.1.0-release.zip --output /opt/dependency-check-6.1.0-release.zip \
-    && unzip /opt/dependency-check-6.1.0-release.zip -d /opt/ \
-    && ln -s /opt/dependency-check/bin/dependency-check.sh /usr/bin/dependency-check \
-    && rm /opt/dependency-check-6.1.0-release.zip
+RUN mkdir -p /home/jenkins/tools \
+    && curl --location https://github.com/jeremylong/DependencyCheck/releases/download/v6.1.0/dependency-check-6.1.0-release.zip --output /home/jenkins/tools/dependency-check-6.1.0-release.zip \
+    && unzip /home/jenkins/tools/dependency-check-6.1.0-release.zip -d /home/jenkins/tools/ \
+    && rm /home/jenkins/tools/dependency-check-6.1.0-release.zip \
+    && chown -R jenkins:jenkins /home/jenkins/tools
+
 
 # Skip setup wizard for Jenkins
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
@@ -53,6 +55,8 @@ RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 COPY config/jenkins.yml /var/jenkins_home/jenkins.yml
 RUN chown jenkins:jenkins /var/jenkins_home/jenkins.yml \
     && chmod 750 /var/jenkins_home/jenkins.yml
+
+ENV PATH="${PATH}:/home/jenkins/tools/dependency-check/bin:/usr/local/bin/tools"
 
 # Drop back down to Jenkins user
 USER jenkins

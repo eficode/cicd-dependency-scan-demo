@@ -20,7 +20,8 @@ pipeline {
                 */
                 stage('OWASP') {
                     steps {
-                        dir("sample_projects/eShopOnWeb") {
+                        dir("example_projects/eShopOnWeb") {
+                            sh 'pwd'
                             sh 'dependency-check.sh --project "eShopOnWeb" --scan ./ -f XML --out dependency-check-dotnet.xml'
                             dependencyCheckPublisher pattern: 'dependency-check-dotnet.xml', 
                                 failedNewCritical: 1,
@@ -45,6 +46,7 @@ pipeline {
                     - Use `snyk test` to execute vulnerability tests locally.
                     - Use `snyk monitor` to upload to Dashboard and get notified of new vulnerabilities. 
                 */
+                /*
                 stage('Snyk') {
                     steps {
                         dir("sample_projects/eShopOnWeb") {
@@ -56,6 +58,7 @@ pipeline {
                         }
                     }
                 }
+                */
             }
         }
         stage('Node') {
