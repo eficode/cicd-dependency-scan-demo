@@ -21,7 +21,9 @@ pipeline {
                 stage('OWASP') {
                     steps {
                         dir("example_projects/eShopOnWeb") {
-                            sh 'pwd'
+                            // Have to build it before scanning
+                            sh 'dotnet build eShopOnWeb.sln'
+                            // Now we can scan
                             sh 'dependency-check.sh --project "eShopOnWeb" --scan ./ -f XML --out dependency-check-dotnet.xml'
                             dependencyCheckPublisher pattern: 'dependency-check-dotnet.xml', 
                                 failedNewCritical: 1,
@@ -84,8 +86,8 @@ pipeline {
         }
         always {
             // Archive some reports
-            // archiveArtifacts artifacts: '**/dependency-check-*.xml',
-            //     followSymlinks: false
+            archiveArtifacts artifacts: '**/dependency-check-*.xml',
+                followSymlinks: false
 
             // Clean up non committed files.
             sh "git clean -fdx"
