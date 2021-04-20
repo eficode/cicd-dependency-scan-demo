@@ -56,7 +56,7 @@ pipeline {
                             snykSecurity organisation: 'Eficode', 
                                 projectName: 'eShopOnWeb', 
                                 severity: 'high', 
-                                snykInstallation: 'snyk', 
+                                snykInstallation: 'snyk-auto', 
                                 snykTokenId: 'token-snyk', 
                                 targetFile: 'eShopOnWeb.sln'
 
