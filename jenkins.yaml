@@ -21,6 +21,7 @@ pipeline {
                 stage('OWASP') {
                     steps {
                         dir("example_projects/eShopOnWeb") {
+                            sh 'pwd'
                             sh 'ls -ll'
                             // Have to build it before scanning
                             sh 'dotnet build eShopOnWeb.sln'
