@@ -48,19 +48,23 @@ pipeline {
                     - Use `snyk test` to execute vulnerability tests locally.
                     - Use `snyk monitor` to upload to Dashboard and get notified of new vulnerabilities. 
                 */
-                /*
                 stage('Snyk') {
                     steps {
-                        dir("sample_projects/eShopOnWeb") {
+                        dir("example-projects/eShopOnWeb") {
                             // If you have the Jenkins snyk plugin installed then it can be used as below.
-                            snykSecurity failOnIssues: false, snykInstallation: 'snyk', snykTokenId: 'token-snyk', targetFile: 'eShopOnWeb.sln'
+                            //snykSecurity failOnIssues: false, snykInstallation: 'snyk', snykTokenId: 'token-snyk', targetFile: 'eShopOnWeb.sln'
+                            snykSecurity organisation: 'Eficode', 
+                                projectName: 'eShopOnWeb', 
+                                severity: 'high', 
+                                snykInstallation: 'snyk', 
+                                snykTokenId: 'token-snyk', 
+                                targetFile: 'eShopOnWeb.sln'
 
                             // You can also execute snyk from the command line as below.
                             // sh 'snyk test --severity-threshold=high --fail-on=upgradable --file=eShopOnWeb.sln'
                         }
                     }
                 }
-                */
             }
         }
         stage('Node') {

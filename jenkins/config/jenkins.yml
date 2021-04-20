@@ -52,10 +52,10 @@ tool:
     - home: "/usr/share/maven"
       name: "maven-3.3.9"
 
-  #dependency-check:
-  #  installations:
-  #  - home: "/usr/bin/dependency-check"
-  #    name: "dependency-check"
+  snyk:
+    installations:
+    - home: "/usr/bin/"
+      name: "snyk"
   
 
 unclassified:
