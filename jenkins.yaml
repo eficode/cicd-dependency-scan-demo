@@ -7,7 +7,7 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr: '5'))
     }
     stages {
-        stage('Scan Dependencies') {
+        stage('DotNet') {
             parallel {
                 /*
                     OWASP open source dependency check cli script. (https://owasp.org/www-project-dependency-check/)
@@ -58,6 +58,16 @@ pipeline {
                 }
             }
         }
+        stage('Node') {
+            steps {
+                sh "echo Add something"
+            }
+        }
+        stage('Java') {
+            steps {
+                sh "echo Add something"
+            }
+        }
     }
     post {
         success {
@@ -71,8 +81,8 @@ pipeline {
         }
         always {
             // Archive some reports
-            archiveArtifacts artifacts: '**/dependency-check-*.xml',
-                followSymlinks: false
+            // archiveArtifacts artifacts: '**/dependency-check-*.xml',
+            //     followSymlinks: false
 
             // Clean up non committed files.
             sh "git clean -fdx"
