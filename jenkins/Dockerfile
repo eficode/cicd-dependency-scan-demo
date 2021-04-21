@@ -38,15 +38,21 @@ RUN npm install -g npm-audit-html yarn yarn-audit-html audit-ci
 # Create a tools folder for manual installs
 RUN mkdir -p /home/jenkins/tools
 
-# Install snyk
+# Install snyk and dependencies
 RUN curl --location https://github.com/snyk/snyk/releases/download/v1.563.0/snyk-linux --output /home/jenkins/tools/snyk-linux \
-    && chmod 750 /home/jenkins/tools/snyk-linux
+    && chmod 750 /home/jenkins/tools/snyk-linux \
+    && ln -s /home/jenkins/tools/snyk-linux /usr/local/bin
+
+RUN curl --location https://github.com/snyk/snyk-to-html/releases/download/v1.14.1/snyk-to-html-linux --output /home/jenkins/tools/snyk-to-html-linux \
+    && chmod 750 /home/jenkins/tools/snyk-to-html-linux \
+    && ln -s /home/jenkins/tools/snyk-to-html-linux /usr/local/bin
 
 # Install OWASP Dependency Check under Jenkins where the db can be written
 RUN gem install bundle-audit && gem cleanup
 RUN curl --location https://github.com/jeremylong/DependencyCheck/releases/download/v6.1.0/dependency-check-6.1.0-release.zip --output /home/jenkins/tools/dependency-check-6.1.0-release.zip \
     && unzip /home/jenkins/tools/dependency-check-6.1.0-release.zip -d /home/jenkins/tools/ \
-    && rm /home/jenkins/tools/dependency-check-6.1.0-release.zip
+    && rm /home/jenkins/tools/dependency-check-6.1.0-release.zip \
+    && ln -s /home/jenkins/tools/dependency-check/bin/dependency-check.sh /usr/local/bin
 
 # Make jenkins user on all manually installed tools
 RUN chown -R jenkins:jenkins /home/jenkins/tools
@@ -63,7 +69,7 @@ COPY config/jenkins.yml /var/jenkins_home/jenkins.yml
 RUN chown jenkins:jenkins /var/jenkins_home/jenkins.yml \
     && chmod 750 /var/jenkins_home/jenkins.yml
 
-ENV PATH="${PATH}:/home/jenkins/tools/dependency-check/bin:/usr/local/bin/tools:/home/jenkins/tools"
+#ENV PATH="${PATH}:/home/jenkins/tools/dependency-check/bin:/usr/local/bin/tools:/home/jenkins/tools"
 
 # Drop back down to Jenkins user
 USER jenkins
