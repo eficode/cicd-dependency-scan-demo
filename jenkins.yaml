@@ -22,6 +22,7 @@ pipeline {
                     steps {
                         dir("example-projects/eShopOnWeb") {
                             // Have to build it before scanning
+                            sh 'dotnet restore eShopOnWeb.sln'
                             sh 'dotnet build eShopOnWeb.sln'
                             // Now we can scan
                             sh 'dependency-check.sh --project "eShopOnWeb" --scan ./ -f XML --out dependency-check-dotnet.xml'

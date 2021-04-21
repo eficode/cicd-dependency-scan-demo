@@ -54,9 +54,13 @@ tool:
 
   snyk:
     installations:
-    - home: "/home/jenkins/tools"
+    - home: "/usr/local/bin"
       name: "snyk"
   
+  dependency-check:
+    installations:
+    - home: "/usr/local/bin"
+      name: "dependency-check"
 
 unclassified:
   location:
