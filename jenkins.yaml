@@ -20,9 +20,11 @@ pipeline {
                 */
                 stage('OWASP') {
                     steps {
-                        dir("example-projects/eShopOnWeb") {
+                        // Running parallel so need separate buil directories
+                        sh 'mkdir owasp-build && cp -r example-projects/eShopOnWeb/* owasp-build/'
+                        
+                        dir("owasp-build") {
                             // Have to build it before scanning
-                            sh 'dotnet restore eShopOnWeb.sln'
                             sh 'dotnet build eShopOnWeb.sln'
                             // Now we can scan
                             sh 'dependency-check.sh --project "eShopOnWeb" --scan ./ -f XML --out dependency-check-dotnet.xml'
@@ -51,7 +53,10 @@ pipeline {
                 */
                 stage('Snyk') {
                     steps {
-                        dir("example-projects/eShopOnWeb") {
+                        // Running parallel so need separate buil directories
+                        sh 'mkdir snyk-build && cp -r example-projects/eShopOnWeb/* snyk-build/'
+
+                        dir("snyk-build") {
                             // Restore the dependencies
                             sh 'dotnet build eShopOnWeb.sln'
                             // If you have the Jenkins snyk plugin installed then it can be used as below.
