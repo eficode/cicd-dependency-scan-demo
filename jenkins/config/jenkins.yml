@@ -54,7 +54,7 @@ tool:
 
   snyk:
     installations:
-    - home: "/usr/bin/"
+    - home: "/home/jenkins/tools"
       name: "snyk"
   
 

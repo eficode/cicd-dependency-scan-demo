@@ -32,17 +32,24 @@ RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
 # Clean up
 RUN apt-get clean && rm -rf /var/lib/apt/list
 
-# Install snyk, yarn and some nuget packages for yarn and npm audit
-RUN npm install -g npm-audit-html snyk yarn yarn-audit-html audit-ci
+# Install yarn and some nuget packages for yarn and npm audit
+RUN npm install -g npm-audit-html yarn yarn-audit-html audit-ci
+
+# Create a tools folder for manual installs
+RUN mkdir -p /home/jenkins/tools
+
+# Install snyk
+RUN curl --location https://github.com/snyk/snyk/releases/download/v1.563.0/snyk-linux --output /home/jenkins/tools/snyk-linux \
+    && chmod 750 /home/jenkins/tools/snyk-linux
 
 # Install OWASP Dependency Check under Jenkins where the db can be written
 RUN gem install bundle-audit && gem cleanup
-RUN mkdir -p /home/jenkins/tools \
-    && curl --location https://github.com/jeremylong/DependencyCheck/releases/download/v6.1.0/dependency-check-6.1.0-release.zip --output /home/jenkins/tools/dependency-check-6.1.0-release.zip \
+RUN curl --location https://github.com/jeremylong/DependencyCheck/releases/download/v6.1.0/dependency-check-6.1.0-release.zip --output /home/jenkins/tools/dependency-check-6.1.0-release.zip \
     && unzip /home/jenkins/tools/dependency-check-6.1.0-release.zip -d /home/jenkins/tools/ \
-    && rm /home/jenkins/tools/dependency-check-6.1.0-release.zip \
-    && chown -R jenkins:jenkins /home/jenkins/tools
+    && rm /home/jenkins/tools/dependency-check-6.1.0-release.zip
 
+# Make jenkins user on all manually installed tools
+RUN chown -R jenkins:jenkins /home/jenkins/tools
 
 # Skip setup wizard for Jenkins
 ENV JAVA_OPTS="-Djenkins.install.runSetupWizard=false"
@@ -56,7 +63,7 @@ COPY config/jenkins.yml /var/jenkins_home/jenkins.yml
 RUN chown jenkins:jenkins /var/jenkins_home/jenkins.yml \
     && chmod 750 /var/jenkins_home/jenkins.yml
 
-ENV PATH="${PATH}:/home/jenkins/tools/dependency-check/bin:/usr/local/bin/tools"
+ENV PATH="${PATH}:/home/jenkins/tools/dependency-check/bin:/usr/local/bin/tools:/home/jenkins/tools"
 
 # Drop back down to Jenkins user
 USER jenkins
