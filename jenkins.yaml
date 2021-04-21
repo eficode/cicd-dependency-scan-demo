@@ -54,9 +54,7 @@ pipeline {
                             // Restore the dependencies
                             sh 'dotnet restore eShopOnWeb.sln'
                             // If you have the Jenkins snyk plugin installed then it can be used as below.
-                            snykSecurity additionalArguments: '--all-projects', 
-                                organisation: 'Demo org', 
-                                projectName: 'eShopOnWeb', 
+                            snykSecurity additionalArguments: '--all-projects',
                                 severity: 'high', 
                                 snykInstallation: 'snyk', 
                                 snykTokenId: 'token-snyk'
