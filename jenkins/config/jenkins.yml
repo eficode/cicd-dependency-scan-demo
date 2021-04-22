@@ -91,3 +91,7 @@ jobs:
           }
         }
       }
+# Not secure but pretties up the yarn/npm html reports...
+groovy:
+  - script: >
+      System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "");
