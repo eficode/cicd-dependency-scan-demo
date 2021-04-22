@@ -58,5 +58,5 @@ node_modules/
 
 # VSCode plugins
 .jenkins.config.json
-
+*.pipeline.config.json
 *.code-workspace

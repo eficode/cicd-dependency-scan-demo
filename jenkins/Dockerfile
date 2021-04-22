@@ -49,9 +49,9 @@ RUN curl --location https://github.com/snyk/snyk-to-html/releases/download/v1.14
 
 # Install OWASP Dependency Check under Jenkins where the db can be written
 RUN gem install bundle-audit && gem cleanup
-RUN curl --location https://github.com/jeremylong/DependencyCheck/releases/download/v6.1.0/dependency-check-6.1.0-release.zip --output /home/jenkins/tools/dependency-check-6.1.0-release.zip \
-    && unzip /home/jenkins/tools/dependency-check-6.1.0-release.zip -d /home/jenkins/tools/ \
-    && rm /home/jenkins/tools/dependency-check-6.1.0-release.zip \
+RUN curl --location https://github.com/jeremylong/DependencyCheck/releases/download/v6.1.5/dependency-check-6.1.5-release.zip --output /home/jenkins/tools/dependency-check-6.1.5-release.zip \
+    && unzip /home/jenkins/tools/dependency-check-6.1.5-release.zip -d /home/jenkins/tools/ \
+    && rm /home/jenkins/tools/dependency-check-6.1.5-release.zip \
     && ln -s /home/jenkins/tools/dependency-check/bin/dependency-check.sh /usr/local/bin
 
 # Make jenkins user on all manually installed tools
