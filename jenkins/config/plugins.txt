@@ -29,6 +29,7 @@ cloudbees-bitbucket-branch-source:2.9.7
 cloudbees-folder:6.15
 command-launcher:1.5
 configuration-as-code:1.47
+configuration-as-code-groovy:1.1
 credentials:2.3.17
 credentials-binding:1.24
 dependency-check-jenkins-plugin:5.1.1
