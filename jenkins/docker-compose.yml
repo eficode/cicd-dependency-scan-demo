@@ -12,7 +12,6 @@ services:
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.ssh-gitlab.address=:2224"
-    restart: unless-stopped
     stop_grace_period: 30s
     networks:
       default:
