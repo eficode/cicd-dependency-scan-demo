@@ -1,4 +1,6 @@
 ace-editor:1.1
+analysis-model-api:10.0.0
+antisamy-markup-formatter:2.1
 apache-httpcomponents-client-4-api:4.5.13-1.0
 authentication-tokens:1.4
 blueocean:1.24.6
@@ -32,12 +34,14 @@ configuration-as-code:1.47
 configuration-as-code-groovy:1.1
 credentials:2.3.17
 credentials-binding:1.24
+data-tables-api:1.10.23-3
 dependency-check-jenkins-plugin:5.1.1
 display-url-api:2.3.4
 durable-task:1.35
 echarts-api:5.0.2-1
 favorite:2.3.3
 font-awesome-api:5.15.2-2
+forensics-api:1.0.0
 git:4.7.1
 git-client:3.7.1
 git-server:1.9
@@ -80,6 +84,7 @@ structs:1.22
 token-macro:2.15
 trilead-api:1.0.13
 variant:1.4
+warnings-ng:9.0.1
 workflow-api:2.42
 workflow-basic-steps:2.23
 workflow-cps:2.90
