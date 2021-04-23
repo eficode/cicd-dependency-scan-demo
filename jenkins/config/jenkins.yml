@@ -1,0 +1,97 @@
+jenkins:
+  systemMessage: | 
+    Jenkins - Dependency Check Demo. 
+  
+  primaryView:
+    all:
+      name: "all"
+  
+  mode: NORMAL
+  numExecutors: 1
+  quietPeriod: 5
+  scmCheckoutRetryCount: 1
+
+  slaveAgentPort: 50000
+  agentProtocols:
+  - "JNLP4-connect"
+  - "Ping"
+  
+  views:
+  - all:
+      name: "all"
+
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+      - id: ${JENKINS_ADMIN_USER}
+        password: ${JENKINS_ADMIN_PASSWORD}
+
+  crumbIssuer: 
+    standard:
+       excludeClientIPFromCrumb: false
+
+  remotingSecurity:
+    enabled: true
+
+  disableRememberMe: false
+
+tool:
+  git:
+    installations:
+    - home: "/usr/bin/git"
+      name: "Default"
+
+  jdk:
+    installations:
+    - home: "/usr/local/openjdk-8"
+      name: "openjdk-8"
+  
+  maven:
+    installations:
+    - home: "/usr/share/maven"
+      name: "maven-3.3.9"
+
+  snyk:
+    installations:
+    - home: "/usr/local/bin"
+      name: "snyk"
+  
+  dependency-check:
+    installations:
+    - home: "/usr/local/bin"
+      name: "dependency-check"
+
+unclassified:
+  location:
+    url: http://jenkins.local.net
+
+# Security Configurations
+security:
+  globalJobDslSecurityConfiguration:
+    useScriptSecurity: false
+
+# Seed Job
+jobs:
+  - script: |
+      job('seed') {
+        description('Run to create/restore all pipelines.')
+        scm {
+          git {
+            remote {
+              name('origin')
+              url('https://github.com/eficode/cicd-dependency-scan-demo.git')
+            }
+            branch('jenkins')
+          }
+        }
+        steps {
+          dsl {
+            external('jenkins/dsl.groovy')
+          }
+        }
+      }
+# Not secure but pretties up the yarn/npm html reports...
+groovy:
+  - script: >
+      System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "");
