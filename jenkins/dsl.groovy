@@ -24,7 +24,7 @@ pipelineJob("dependency-checks") {
                         name('origin')
                         url('https://github.com/eficode/cicd-dependency-scan-demo.git')
                     }
-                    branches('*/jenkins')
+                    branches('*/main')
                 }
             }
             scriptPath("jenkins.groovy")
