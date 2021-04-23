@@ -27,7 +27,7 @@ pipelineJob("dependency-checks") {
                     branches('*/jenkins')
                 }
             }
-            scriptPath("jenkins.yaml")
+            scriptPath("jenkins.groovy")
         }
     }
 }
