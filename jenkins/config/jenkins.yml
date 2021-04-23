@@ -82,7 +82,7 @@ jobs:
               name('origin')
               url('https://github.com/eficode/cicd-dependency-scan-demo.git')
             }
-            branch('jenkins')
+            branch('main')
           }
         }
         steps {
