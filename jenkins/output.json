@@ -1,0 +1,2233 @@
+{
+  "actions": [
+    {
+      "isMajor": false,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 106,
+          "path": "express>accepts>negotiator",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 526,
+          "path": "express>fresh",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 526,
+          "path": "express>send>fresh",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 526,
+          "path": "express>serve-static>send>fresh",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "express>debug",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "express>finalhandler>debug",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "express>send>debug",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "express>serve-static>send>debug",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 535,
+          "path": "express>send>mime",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 535,
+          "path": "express>serve-static>send>mime",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1469,
+          "path": "express>qs",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "express",
+      "target": "4.17.1"
+    },
+    {
+      "isMajor": false,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 534,
+          "path": "body-parser>debug",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1469,
+          "path": "body-parser>qs",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "body-parser",
+      "target": "1.19.0"
+    },
+    {
+      "isMajor": false,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 534,
+          "path": "express-session>debug",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 660,
+          "path": "express-session>uid-safe>base64-url",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "express-session",
+      "target": "1.17.1"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 534,
+          "path": "method-override>debug",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 538,
+          "path": "method-override",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "method-override",
+      "target": "3.0.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 534,
+          "path": "mongoose>mquery>debug",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 779,
+          "path": "mongoose>mpath",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1203,
+          "path": "mongoose>mongodb",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1649,
+          "path": "mongoose>mquery",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "mongoose",
+      "target": "5.12.5"
+    },
+    {
+      "isMajor": false,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 534,
+          "path": "morgan>debug",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 736,
+          "path": "morgan",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "morgan",
+      "target": "1.10.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 537,
+          "path": "slug",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "slug",
+      "target": "4.0.4"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 577,
+          "path": "express-jwt>lodash",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 782,
+          "path": "express-jwt>lodash",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1065,
+          "path": "express-jwt>lodash",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1523,
+          "path": "express-jwt>lodash",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "express-jwt",
+      "target": "6.0.0"
+    },
+    {
+      "isMajor": true,
+      "action": "install",
+      "resolves": [
+        {
+          "id": 755,
+          "path": "newman>handlebars",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 782,
+          "path": "newman>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 782,
+          "path": "newman>postman-collection>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 782,
+          "path": "newman>postman-runtime>postman-collection>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 782,
+          "path": "newman>postman-collection-transformer>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 782,
+          "path": "newman>postman-runtime>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 782,
+          "path": "newman>postman-runtime>postman-sandbox>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 782,
+          "path": "newman>postman-runtime>postman-sandbox>uvm>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 812,
+          "path": "newman>postman-collection>marked",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 812,
+          "path": "newman>postman-runtime>postman-collection>marked",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1065,
+          "path": "newman>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1065,
+          "path": "newman>postman-collection>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1065,
+          "path": "newman>postman-runtime>postman-collection>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1065,
+          "path": "newman>postman-collection-transformer>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1065,
+          "path": "newman>postman-runtime>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1065,
+          "path": "newman>postman-runtime>postman-sandbox>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1065,
+          "path": "newman>postman-runtime>postman-sandbox>uvm>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1076,
+          "path": "newman>postman-collection>marked",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1076,
+          "path": "newman>postman-runtime>postman-collection>marked",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1164,
+          "path": "newman>handlebars",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1171,
+          "path": "newman>csv-parse",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1179,
+          "path": "newman>handlebars>optimist>minimist",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1179,
+          "path": "newman>mkdirp>minimist",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1300,
+          "path": "newman>handlebars",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1316,
+          "path": "newman>handlebars",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1324,
+          "path": "newman>handlebars",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1325,
+          "path": "newman>handlebars",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1523,
+          "path": "newman>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1523,
+          "path": "newman>postman-collection>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1523,
+          "path": "newman>postman-runtime>postman-collection>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1523,
+          "path": "newman>postman-collection-transformer>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1523,
+          "path": "newman>postman-runtime>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1523,
+          "path": "newman>postman-runtime>postman-sandbox>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1523,
+          "path": "newman>postman-runtime>postman-sandbox>uvm>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "newman",
+      "target": "5.2.2"
+    },
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>anymatch>micromatch>braces>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>readdirp>micromatch>braces>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>braces>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>anymatch>micromatch>extglob>expand-brackets>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>readdirp>micromatch>extglob>expand-brackets>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>anymatch>micromatch>extglob>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>readdirp>micromatch>extglob>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>anymatch>micromatch>nanomatch>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>readdirp>micromatch>nanomatch>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>anymatch>micromatch>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>chokidar>readdirp>micromatch>snapdragon>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 534,
+          "path": "nodemon>undefsafe>debug",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "debug",
+      "target": "2.6.9",
+      "depth": 8
+    },
+    {
+      "action": "update",
+      "resolves": [
+        {
+          "id": 782,
+          "path": "newman>postman-runtime>async>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1065,
+          "path": "newman>postman-runtime>async>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 1523,
+          "path": "newman>postman-runtime>async>lodash",
+          "dev": true,
+          "optional": false,
+          "bundled": false
+        }
+      ],
+      "module": "lodash",
+      "target": "4.17.21",
+      "depth": 4
+    },
+    {
+      "action": "review",
+      "module": "tough-cookie",
+      "resolves": [
+        {
+          "id": 130,
+          "path": "request>tough-cookie",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        },
+        {
+          "id": 525,
+          "path": "request>tough-cookie",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "hoek",
+      "resolves": [
+        {
+          "id": 566,
+          "path": "jsonwebtoken>joi>hoek",
+          "dev": false,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 566,
+          "path": "jsonwebtoken>joi>topo>hoek",
+          "dev": false,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 566,
+          "path": "request>hawk>boom>hoek",
+          "dev": false,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 566,
+          "path": "request>hawk>cryptiles>boom>hoek",
+          "dev": false,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 566,
+          "path": "request>hawk>hoek",
+          "dev": false,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 566,
+          "path": "request>hawk>sntp>hoek",
+          "dev": false,
+          "bundled": false,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "tunnel-agent",
+      "resolves": [
+        {
+          "id": 598,
+          "path": "request>tunnel-agent",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "cryptiles",
+      "resolves": [
+        {
+          "id": 1464,
+          "path": "request>hawk>cryptiles",
+          "dev": false,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1464,
+          "path": "newman>postman-request>hawk>cryptiles",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1464,
+          "path": "newman>postman-runtime>postman-request>hawk>cryptiles",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        },
+        {
+          "id": 1464,
+          "path": "newman>postman-runtime>hawk>cryptiles",
+          "dev": true,
+          "bundled": false,
+          "optional": false
+        }
+      ]
+    },
+    {
+      "action": "review",
+      "module": "bl",
+      "resolves": [
+        {
+          "id": 1555,
+          "path": "request>bl",
+          "dev": false,
+          "optional": false,
+          "bundled": false
+        }
+      ]
+    }
+  ],
+  "advisories": {
+    "106": {
+      "findings": [
+        {
+          "version": "0.5.3",
+          "paths": [
+            "express>accepts>negotiator"
+          ]
+        }
+      ],
+      "id": 106,
+      "created": "2016-05-04T16:34:12.000Z",
+      "updated": "2018-04-17T12:58:40.142Z",
+      "deleted": null,
+      "title": "Regular Expression Denial of Service",
+      "found_by": {
+        "name": "Adam Baldwin"
+      },
+      "reported_by": {
+        "name": "Adam Baldwin"
+      },
+      "module_name": "negotiator",
+      "cves": [
+        "CVE-2016-10539"
+      ],
+      "vulnerable_versions": "<= 0.6.0",
+      "patched_versions": ">= 0.6.1",
+      "overview": "Affected versions of `negotiator` are vulnerable to regular expression denial of service attacks, which trigger upon parsing a specially crafted `Accept-Language` header value.\n\n",
+      "recommendation": "Update to version 0.6.1 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "Network.Library",
+        "exploitability": 6,
+        "affected_components": "Internal::Code::Function::acceptsLanguages()"
+      },
+      "url": "https://npmjs.com/advisories/106"
+    },
+    "130": {
+      "findings": [
+        {
+          "version": "2.2.2",
+          "paths": [
+            "request>tough-cookie"
+          ]
+        }
+      ],
+      "id": 130,
+      "created": "2016-07-22T19:43:01.000Z",
+      "updated": "2018-03-01T23:04:14.264Z",
+      "deleted": null,
+      "title": "ReDoS via long string of semicolons",
+      "found_by": {
+        "name": "David Kirchner"
+      },
+      "reported_by": {
+        "name": "David Kirchner"
+      },
+      "module_name": "tough-cookie",
+      "cves": [
+        "CVE-2016-1000232"
+      ],
+      "vulnerable_versions": ">=0.9.7 <=2.2.2",
+      "patched_versions": ">=2.3.0",
+      "overview": "Affected versions of `tough-cookie` may be vulnerable to regular expression denial of service when long strings of semicolons exist in the `Set-Cookie` header.",
+      "recommendation": "Update to version 2.3.0 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "moderate",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "Multi.Library",
+        "exploitability": 7,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/130"
+    },
+    "525": {
+      "findings": [
+        {
+          "version": "2.2.2",
+          "paths": [
+            "request>tough-cookie"
+          ]
+        }
+      ],
+      "id": 525,
+      "created": "2017-09-08T18:07:02.061Z",
+      "updated": "2019-06-24T14:57:19.055Z",
+      "deleted": null,
+      "title": "Regular Expression Denial of Service",
+      "found_by": {
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "reported_by": {
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "module_name": "tough-cookie",
+      "cves": [
+        "CVE-2017-15010"
+      ],
+      "vulnerable_versions": "<2.3.3",
+      "patched_versions": ">=2.3.3",
+      "overview": "Affected versions of `tough-cookie` are susceptible to a regular expression denial of service.\n\nThe amplification on this vulnerability is relatively low - it takes around 2 seconds for the engine to execute on a malicious input which is 50,000 characters in length.\n\nIf node was compiled using the `-DHTTP_MAX_HEADER_SIZE` however, the impact of the vulnerability can be significant, as the primary limitation for the vulnerability is the default max HTTP header length in node.",
+      "recommendation": "Update to version 2.3.3 or later.",
+      "references": "- [Issue #92](https://github.com/salesforce/tough-cookie/issues/92)",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "Network.Library",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/525"
+    },
+    "526": {
+      "findings": [
+        {
+          "version": "0.3.0",
+          "paths": [
+            "express>fresh",
+            "express>send>fresh",
+            "express>serve-static>send>fresh"
+          ]
+        }
+      ],
+      "id": 526,
+      "created": "2017-09-08T20:23:54.164Z",
+      "updated": "2018-04-09T00:15:21.807Z",
+      "deleted": null,
+      "title": "Regular Expression Denial of Service",
+      "found_by": {
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "reported_by": {
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "module_name": "fresh",
+      "cves": [
+        "CVE-2017-16119"
+      ],
+      "vulnerable_versions": "< 0.5.2",
+      "patched_versions": ">= 0.5.2",
+      "overview": "Affected versions of `fresh` are vulnerable to regular expression denial of service when parsing specially crafted user input.",
+      "recommendation": "Update to version 0.5.2 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "Multi.Library",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/526"
+    },
+    "534": {
+      "findings": [
+        {
+          "version": "2.2.0",
+          "paths": [
+            "body-parser>debug",
+            "express>debug",
+            "express>finalhandler>debug",
+            "express>send>debug",
+            "express>serve-static>send>debug",
+            "express-session>debug",
+            "method-override>debug",
+            "mongoose>mquery>debug",
+            "morgan>debug",
+            "nodemon>chokidar>anymatch>micromatch>braces>snapdragon>debug",
+            "nodemon>chokidar>readdirp>micromatch>braces>snapdragon>debug",
+            "nodemon>chokidar>braces>snapdragon>debug",
+            "nodemon>chokidar>anymatch>micromatch>extglob>expand-brackets>snapdragon>debug",
+            "nodemon>chokidar>readdirp>micromatch>extglob>expand-brackets>snapdragon>debug",
+            "nodemon>chokidar>anymatch>micromatch>extglob>snapdragon>debug",
+            "nodemon>chokidar>readdirp>micromatch>extglob>snapdragon>debug",
+            "nodemon>chokidar>anymatch>micromatch>nanomatch>snapdragon>debug",
+            "nodemon>chokidar>readdirp>micromatch>nanomatch>snapdragon>debug",
+            "nodemon>chokidar>anymatch>micromatch>snapdragon>debug",
+            "nodemon>chokidar>readdirp>micromatch>snapdragon>debug",
+            "nodemon>undefsafe>debug"
+          ]
+        }
+      ],
+      "id": 534,
+      "created": "2017-09-25T18:55:55.956Z",
+      "updated": "2018-05-16T19:37:43.686Z",
+      "deleted": null,
+      "title": "Regular Expression Denial of Service",
+      "found_by": {
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "reported_by": {
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "module_name": "debug",
+      "cves": [
+        "CVE-2017-16137"
+      ],
+      "vulnerable_versions": "<= 2.6.8 || >= 3.0.0 <= 3.0.1",
+      "patched_versions": ">= 2.6.9 < 3.0.0 || >= 3.1.0",
+      "overview": "Affected versions of `debug` are vulnerable to regular expression denial of service when untrusted user input is passed into the `o` formatter. \n\nAs it takes 50,000 characters to block the event loop for 2 seconds, this issue is a low severity issue.",
+      "recommendation": "Version 2.x.x: Update to version 2.6.9 or later.\nVersion 3.x.x: Update to version 3.1.0 or later.\n",
+      "references": "- [Issue #501](https://github.com/visionmedia/debug/issues/501)\n- [PR #504](https://github.com/visionmedia/debug/pull/504)",
+      "access": "public",
+      "severity": "low",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/534"
+    },
+    "535": {
+      "findings": [
+        {
+          "version": "1.3.4",
+          "paths": [
+            "express>send>mime",
+            "express>serve-static>send>mime"
+          ]
+        }
+      ],
+      "id": 535,
+      "created": "2017-09-25T19:02:28.152Z",
+      "updated": "2018-04-09T00:38:22.785Z",
+      "deleted": null,
+      "title": "Regular Expression Denial of Service",
+      "found_by": {
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "reported_by": {
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "module_name": "mime",
+      "cves": [
+        "CVE-2017-16138"
+      ],
+      "vulnerable_versions": "< 1.4.1 || > 2.0.0 < 2.0.3",
+      "patched_versions": ">= 1.4.1 < 2.0.0 || >= 2.0.3",
+      "overview": "Affected versions of `mime` are vulnerable to regular expression denial of service when a mime lookup is performed on untrusted user input.",
+      "recommendation": "Update to version 2.0.3 or later.",
+      "references": "[Issue #167](https://github.com/broofa/node-mime/issues/167)",
+      "access": "public",
+      "severity": "moderate",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "Multi.Library",
+        "exploitability": 4,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/535"
+    },
+    "537": {
+      "findings": [
+        {
+          "version": "0.9.1",
+          "paths": [
+            "slug"
+          ]
+        }
+      ],
+      "id": 537,
+      "created": "2017-09-25T19:20:56.985Z",
+      "updated": "2018-10-25T15:20:24.875Z",
+      "deleted": null,
+      "title": "Regular Expression Denial of Service",
+      "found_by": {
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "reported_by": {
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "module_name": "slug",
+      "cves": [
+        "CVE-2017-16117"
+      ],
+      "vulnerable_versions": "<=0.9.1",
+      "patched_versions": ">=0.9.2",
+      "overview": "Affected versions of `slug` are vulnerable to a regular expression denial of service when parsing untrusted user input.\n\nThe issue is low severity, as it takes 50,000 characters to cause the event loop to block for 2 seconds,\n\nAbout 50k characters can block the event loop for 2 seconds.",
+      "recommendation": "Update to version 0.9.2 or later.",
+      "references": "- [GitHub Issue #82](https://github.com/dodo/node-slug/issues/82)",
+      "access": "public",
+      "severity": "moderate",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "Multi.Library",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/537"
+    },
+    "538": {
+      "findings": [
+        {
+          "version": "2.3.5",
+          "paths": [
+            "method-override"
+          ]
+        }
+      ],
+      "id": 538,
+      "created": "2017-09-27T18:09:29.038Z",
+      "updated": "2018-04-09T00:50:26.233Z",
+      "deleted": null,
+      "title": "Regular Expression Denial of Service",
+      "found_by": {
+        "name": "Doug Wilson"
+      },
+      "reported_by": {
+        "name": "Doug Wilson"
+      },
+      "module_name": "method-override",
+      "cves": [
+        "CVE-2017-16136"
+      ],
+      "vulnerable_versions": "<= 1.0.2 || > 2.0.0 < 2.3.10",
+      "patched_versions": "> 1.0.2 < 2.0.0 || >= 2.3.10",
+      "overview": "Affected versions of `method-override` are vulnerable to a regular expression denial of service vulnerability when untrusted user input is passed into the `X-HTTP-Method-Override` header.",
+      "recommendation": "Update to version 2.3.10 or later",
+      "references": "",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "Multi.Library",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/538"
+    },
+    "566": {
+      "findings": [
+        {
+          "version": "2.16.3",
+          "paths": [
+            "jsonwebtoken>joi>hoek",
+            "jsonwebtoken>joi>topo>hoek",
+            "request>hawk>boom>hoek",
+            "request>hawk>cryptiles>boom>hoek",
+            "request>hawk>hoek",
+            "request>hawk>sntp>hoek"
+          ]
+        }
+      ],
+      "id": 566,
+      "created": "2018-04-20T21:25:58.421Z",
+      "updated": "2019-06-19T20:16:59.758Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "name": "HoLyVieR"
+      },
+      "reported_by": {
+        "name": "HoLyVieR"
+      },
+      "module_name": "hoek",
+      "cves": [
+        "CVE-2018-3728"
+      ],
+      "vulnerable_versions": "<= 4.2.0 || >= 5.0.0 < 5.0.3",
+      "patched_versions": "> 4.2.0 < 5.0.0 || >= 5.0.3",
+      "overview": "Versions of `hoek` prior to 4.2.1 and 5.0.3 are vulnerable to prototype pollution.\n\nThe `merge` function, and the `applyToDefaults` and `applyToDefaultsWithShallow` functions which leverage `merge` behind the scenes, are vulnerable to a prototype pollution attack when provided an _unvalidated_ payload created from a JSON string containing the `__proto__` property.\n\nThis can be demonstrated like so:\n\n```javascript\nvar Hoek = require('hoek');\nvar malicious_payload = '{\"__proto__\":{\"oops\":\"It works !\"}}';\n\nvar a = {};\nconsole.log(\"Before : \" + a.oops);\nHoek.merge({}, JSON.parse(malicious_payload));\nconsole.log(\"After : \" + a.oops);\n```\n\nThis type of attack can be used to overwrite existing properties causing a potential denial of service.",
+      "recommendation": "Update to version 4.2.1, 5.0.3 or later.",
+      "references": "- [HackerOne Report](https://hackerone.com/reports/310439)",
+      "access": "public",
+      "severity": "moderate",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/566"
+    },
+    "577": {
+      "findings": [
+        {
+          "version": "3.10.1",
+          "paths": [
+            "express-jwt>lodash"
+          ]
+        }
+      ],
+      "id": 577,
+      "created": "2018-04-24T14:27:02.796Z",
+      "updated": "2018-04-24T14:27:13.049Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "name": "Olivier Arteau (HoLyVieR)"
+      },
+      "reported_by": {
+        "name": "Olivier Arteau (HoLyVieR)"
+      },
+      "module_name": "lodash",
+      "cves": [
+        "CVE-2018-3721"
+      ],
+      "vulnerable_versions": "<4.17.5",
+      "patched_versions": ">=4.17.5",
+      "overview": "Versions of `lodash` before 4.17.5 are vulnerable to prototype pollution. \n\nThe vulnerable functions are 'defaultsDeep', 'merge', and 'mergeWith' which allow a malicious user to modify the prototype of `Object` via `__proto__` causing the addition or modification of an existing property that will exist on all objects.\n\n",
+      "recommendation": "Update to version 4.17.5 or later.",
+      "references": "- [HackerOne Report](https://hackerone.com/reports/310443)",
+      "access": "public",
+      "severity": "low",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 1,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/577"
+    },
+    "598": {
+      "findings": [
+        {
+          "version": "0.4.3",
+          "paths": [
+            "request>tunnel-agent"
+          ]
+        }
+      ],
+      "id": 598,
+      "created": "2018-04-24T20:30:16.099Z",
+      "updated": "2018-04-24T20:31:15.816Z",
+      "deleted": null,
+      "title": "Memory Exposure",
+      "found_by": {
+        "name": "Сковорода Никита Андреевич"
+      },
+      "reported_by": {
+        "name": "Сковорода Никита Андреевич"
+      },
+      "module_name": "tunnel-agent",
+      "cves": [],
+      "vulnerable_versions": "<0.6.0",
+      "patched_versions": ">=0.6.0",
+      "overview": "Versions of `tunnel-agent` before 0.6.0 are vulnerable to memory exposure.\n\nThis is exploitable if user supplied input is provided to the auth value and is a number.\n\nProof-of-concept:\n```js\nrequire('request')({\n  method: 'GET',\n  uri: 'http://www.example.com',\n  tunnel: true,\n  proxy:{\n    protocol: 'http:',\n    host:'127.0.0.1',\n    port:8080,\n    auth:USERSUPPLIEDINPUT // number\n  }\n});\n```",
+      "recommendation": "Update to version 0.6.0 or later.",
+      "references": "- [GitHub Commit #9ca95ec](https://github.com/request/tunnel-agent/commit/9ca95ec7219daface8a6fc2674000653de0922c0)\n- [Proof of Concept](https://gist.github.com/ChALkeR/fd6b2c445834244e7d440a043f9d2ff4)",
+      "access": "public",
+      "severity": "moderate",
+      "cwe": "CWE-20",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 3,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/598"
+    },
+    "660": {
+      "findings": [
+        {
+          "version": "1.2.1",
+          "paths": [
+            "express-session>uid-safe>base64-url"
+          ]
+        }
+      ],
+      "id": 660,
+      "created": "2018-05-16T19:25:44.825Z",
+      "updated": "2018-05-16T19:25:44.825Z",
+      "deleted": null,
+      "title": "Out-of-bounds Read",
+      "found_by": {
+        "name": "Сковорода Никита Андреевич"
+      },
+      "reported_by": {
+        "name": "Сковорода Никита Андреевич"
+      },
+      "module_name": "base64-url",
+      "cves": [],
+      "vulnerable_versions": "<2.0.0",
+      "patched_versions": ">=2.0.0",
+      "overview": "Versions of `base64-url` before 2.0.0 are vulnerable to out-of-bounds read as it allocates uninitialized Buffers when number is passed in input.",
+      "recommendation": "Update to version 2.0.0 or later.",
+      "references": "- [HackerOne Report](https://hackerone.com/reports/321692)",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-125",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 2,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/660"
+    },
+    "736": {
+      "findings": [
+        {
+          "version": "1.7.0",
+          "paths": [
+            "morgan"
+          ]
+        }
+      ],
+      "id": 736,
+      "created": "2018-11-09T19:08:17.215Z",
+      "updated": "2018-11-09T19:08:31.825Z",
+      "deleted": null,
+      "title": "Code Injection",
+      "found_by": {
+        "link": "https://semmle.com/security",
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "reported_by": {
+        "link": "https://semmle.com/security",
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "module_name": "morgan",
+      "cves": [],
+      "vulnerable_versions": "<=1.9.0",
+      "patched_versions": ">=1.9.1",
+      "overview": "Verisons of `morgan` before 1.9.1 are vulnerable to code injection when user input is allowed into the filter or combined with a prototype pollution attack.",
+      "recommendation": "Update to version 1.9.1 or later.",
+      "references": "- [HackerOne Report](https://hackerone.com/reports/390881)\n- [Node.js security-wg](https://github.com/nodejs/security-wg/blob/master/vuln/npm/473.json)",
+      "access": "public",
+      "severity": "moderate",
+      "cwe": "CWE-94",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/736"
+    },
+    "755": {
+      "findings": [
+        {
+          "version": "4.0.11",
+          "paths": [
+            "newman>handlebars"
+          ]
+        }
+      ],
+      "id": 755,
+      "created": "2018-12-28T20:34:57.708Z",
+      "updated": "2019-09-16T15:12:18.445Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "link": "",
+        "name": "Mahmoud Gamal, Matías Lang"
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Mahmoud Gamal, Matías Lang"
+      },
+      "module_name": "handlebars",
+      "cves": [],
+      "vulnerable_versions": "<=4.0.13 || >=4.1.0 <4.1.2",
+      "patched_versions": ">=4.0.14 <4.1.0 || >=4.1.2",
+      "overview": "Versions of `handlebars` prior to 4.0.14 are vulnerable to Prototype Pollution. Templates may alter an Objects' prototype, thus allowing an attacker to execute arbitrary code on the server.",
+      "recommendation": "For handlebars 4.1.x upgrade to 4.1.2 or later.\nFor handlebars 4.0.x upgrade to 4.0.14 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "critical",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 6,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/755"
+    },
+    "779": {
+      "findings": [
+        {
+          "version": "0.2.1",
+          "paths": [
+            "mongoose>mpath"
+          ]
+        }
+      ],
+      "id": 779,
+      "created": "2019-02-06T00:59:55.303Z",
+      "updated": "2019-02-06T22:52:14.328Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "link": "https://semmle.com/security",
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "reported_by": {
+        "link": "https://semmle.com/security",
+        "name": "Cristian-Alexandru Staicu"
+      },
+      "module_name": "mpath",
+      "cves": [
+        "CVE-2018-16490"
+      ],
+      "vulnerable_versions": "<0.5.1",
+      "patched_versions": ">=0.5.1",
+      "overview": "Versions of `mpath` before 0.5.1 are vulnerable to prototype pollution. Provided certain input `mpath` can add or modify properties of the `Object` prototype. These properties will be present on all objects.",
+      "recommendation": "Update to version `0.5.1` or later.",
+      "references": "- [HackerOne Report](https://hackerone.com/reports/390860)",
+      "access": "public",
+      "severity": "moderate",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 1,
+        "affected_components": "CVSS: CVSS:3.0/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:L"
+      },
+      "url": "https://npmjs.com/advisories/779"
+    },
+    "782": {
+      "findings": [
+        {
+          "version": "3.10.1",
+          "paths": [
+            "express-jwt>lodash"
+          ]
+        },
+        {
+          "version": "4.17.9",
+          "paths": [
+            "newman>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-collection>lodash",
+            "newman>postman-runtime>postman-collection>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-collection-transformer>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-runtime>async>lodash",
+            "newman>postman-runtime>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-runtime>postman-sandbox>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-runtime>postman-sandbox>uvm>lodash"
+          ]
+        }
+      ],
+      "id": 782,
+      "created": "2019-02-13T16:16:53.770Z",
+      "updated": "2019-06-27T14:01:44.172Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "link": "",
+        "name": "asgerf"
+      },
+      "reported_by": {
+        "link": "",
+        "name": "asgerf"
+      },
+      "module_name": "lodash",
+      "cves": [
+        "CVE-2018-16487"
+      ],
+      "vulnerable_versions": "<4.17.11",
+      "patched_versions": ">=4.17.11",
+      "overview": "Versions of `lodash` before 4.17.5 are vulnerable to prototype pollution. \n\nThe vulnerable functions are 'defaultsDeep', 'merge', and 'mergeWith' which allow a malicious user to modify the prototype of `Object` via `{constructor: {prototype: {...}}}` causing the addition or modification of an existing property that will exist on all objects.\n\n",
+      "recommendation": "Update to version 4.17.11 or later.",
+      "references": "- [HackerOne Report](https://hackerone.com/reports/380873)",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 3,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/782"
+    },
+    "812": {
+      "findings": [
+        {
+          "version": "0.4.0",
+          "paths": [
+            "newman>postman-collection>marked",
+            "newman>postman-runtime>postman-collection>marked"
+          ]
+        }
+      ],
+      "id": 812,
+      "created": "2019-04-10T17:42:37.650Z",
+      "updated": "2019-04-10T17:42:37.650Z",
+      "deleted": null,
+      "title": "Regular Expression Denial of Service",
+      "found_by": {
+        "link": "",
+        "name": "Anders Kaseorg"
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Anders Kaseorg"
+      },
+      "module_name": "marked",
+      "cves": [],
+      "vulnerable_versions": ">=0.3.14 <0.6.2",
+      "patched_versions": ">=0.6.2",
+      "overview": "Versions of `marked` prior to 0.6.2 and later than 0.3.14 are vulnerable to Regular Expression Denial of Service. Email addresses may be evaluated in quadratic time, allowing attackers to potentially crash the node process due to resource exhaustion.",
+      "recommendation": "Upgrade to version 0.6.2 or later.",
+      "references": "- [GitHub PR](https://github.com/markedjs/marked/pull/1460)\n- [Snyk Report](https://snyk.io/vuln/SNYK-JS-MARKED-174116)",
+      "access": "public",
+      "severity": "moderate",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/812"
+    },
+    "1065": {
+      "findings": [
+        {
+          "version": "3.10.1",
+          "paths": [
+            "express-jwt>lodash"
+          ]
+        },
+        {
+          "version": "4.17.9",
+          "paths": [
+            "newman>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-collection>lodash",
+            "newman>postman-runtime>postman-collection>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-collection-transformer>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-runtime>async>lodash",
+            "newman>postman-runtime>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-runtime>postman-sandbox>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-runtime>postman-sandbox>uvm>lodash"
+          ]
+        }
+      ],
+      "id": 1065,
+      "created": "2019-07-15T17:22:56.990Z",
+      "updated": "2019-07-15T17:25:05.721Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "link": "",
+        "name": "Snyk Security Team"
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Snyk Security Team"
+      },
+      "module_name": "lodash",
+      "cves": [
+        "CVE-2019-10744"
+      ],
+      "vulnerable_versions": "<4.17.12",
+      "patched_versions": ">=4.17.12",
+      "overview": "Versions of `lodash` before 4.17.12 are vulnerable to Prototype Pollution.  The function `defaultsDeep` allows a malicious user to modify the prototype of `Object` via `{constructor: {prototype: {...}}}` causing the addition or modification of an existing property that will exist on all objects.\n\n",
+      "recommendation": "Update to version 4.17.12 or later.",
+      "references": "- [Snyk Advisory](https://snyk.io/vuln/SNYK-JS-LODASH-450202)",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 3,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1065"
+    },
+    "1076": {
+      "findings": [
+        {
+          "version": "0.4.0",
+          "paths": [
+            "newman>postman-collection>marked",
+            "newman>postman-runtime>postman-collection>marked"
+          ]
+        }
+      ],
+      "id": 1076,
+      "created": "2019-07-17T20:26:14.214Z",
+      "updated": "2019-07-25T18:15:12.932Z",
+      "deleted": null,
+      "title": "Regular Expression Denial of Service",
+      "found_by": {
+        "link": "",
+        "name": "Bart Grantham"
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Bart Grantham"
+      },
+      "module_name": "marked",
+      "cves": [],
+      "vulnerable_versions": ">=0.4.0 <0.7.0",
+      "patched_versions": ">=0.7.0",
+      "overview": "Affected versions of `marked` are vulnerable to Regular Expression Denial of Service (ReDoS). The `_label` subrule may significantly degrade parsing performance of malformed input.",
+      "recommendation": "Upgrade to version 0.7.0 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "low",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1076"
+    },
+    "1164": {
+      "findings": [
+        {
+          "version": "4.0.11",
+          "paths": [
+            "newman>handlebars"
+          ]
+        }
+      ],
+      "id": 1164,
+      "created": "2019-09-16T15:14:43.509Z",
+      "updated": "2020-02-26T17:57:03.589Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "link": "",
+        "name": "itszn",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "itszn",
+        "email": ""
+      },
+      "module_name": "handlebars",
+      "cves": [
+        "CVE-2019-19919"
+      ],
+      "vulnerable_versions": "<3.0.8 || >=4.0.0 <4.3.0",
+      "patched_versions": ">=3.0.8 <4.0.0 || >=4.3.0",
+      "overview": "Versions of `handlebars` prior to 3.0.8 or 4.3.0 are vulnerable to Prototype Pollution leading to Remote Code Execution. Templates may alter an Objects' `__proto__` and `__defineGetter__` properties, which may allow an attacker to execute arbitrary code through crafted payloads.",
+      "recommendation": "Upgrade to version 3.0.8, 4.3.0 or later.",
+      "references": "- [CVE](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19919)",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 6,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1164"
+    },
+    "1171": {
+      "findings": [
+        {
+          "version": "1.3.3",
+          "paths": [
+            "newman>csv-parse"
+          ]
+        }
+      ],
+      "id": 1171,
+      "created": "2019-09-17T18:16:39.112Z",
+      "updated": "2019-10-15T17:33:24.244Z",
+      "deleted": null,
+      "title": "Regular Expression Denial of Service",
+      "found_by": {
+        "link": "",
+        "name": "posix",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "posix",
+        "email": ""
+      },
+      "module_name": "csv-parse",
+      "cves": [
+        "CVE-2019-17592"
+      ],
+      "vulnerable_versions": "<4.4.6",
+      "patched_versions": ">=4.4.6",
+      "overview": "Versions of `csv-parse` prior to 4.4.6 are vulnerable to Regular Expression Denial of Service. The `__isInt()` function contains a malformed regular expression that processes large specially-crafted input very slowly, leading to a Denial of Service. This is triggered when using the `cast` option.",
+      "recommendation": "Upgrade to version 4.4.6 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 6,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1171"
+    },
+    "1179": {
+      "findings": [
+        {
+          "version": "0.0.10",
+          "paths": [
+            "newman>handlebars>optimist>minimist"
+          ]
+        },
+        {
+          "version": "0.0.8",
+          "paths": [
+            "newman>mkdirp>minimist"
+          ]
+        }
+      ],
+      "id": 1179,
+      "created": "2019-09-23T15:01:43.049Z",
+      "updated": "2020-03-18T19:41:45.921Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "link": "https://www.checkmarx.com/resources/blog/",
+        "name": "Checkmarx Research Team",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "https://www.checkmarx.com/resources/blog/",
+        "name": "Checkmarx Research Team",
+        "email": ""
+      },
+      "module_name": "minimist",
+      "cves": [],
+      "vulnerable_versions": "<0.2.1 || >=1.0.0 <1.2.3",
+      "patched_versions": ">=0.2.1 <1.0.0 || >=1.2.3",
+      "overview": "Affected versions of `minimist` are vulnerable to prototype pollution. Arguments are not properly sanitized, allowing an attacker to modify the prototype of `Object`, causing the addition or modification of an existing property that will exist on all objects.  \nParsing the argument `--__proto__.y=Polluted` adds a `y` property with value `Polluted` to all objects. The argument `--__proto__=Polluted` raises and uncaught error and crashes the application.  \nThis is exploitable if attackers have control over the arguments being passed to `minimist`.\n",
+      "recommendation": "Upgrade to versions 0.2.1, 1.2.3 or later.",
+      "references": "- [GitHub commit 1](https://github.com/substack/minimist/commit/4cf1354839cb972e38496d35e12f806eea92c11f#diff-a1e0ee62c91705696ddb71aa30ad4f95)\n- [GitHub commit 2](https://github.com/substack/minimist/commit/63e7ed05aa4b1889ec2f3b196426db4500cbda94)",
+      "access": "public",
+      "severity": "low",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 1,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1179"
+    },
+    "1203": {
+      "findings": [
+        {
+          "version": "2.1.10",
+          "paths": [
+            "mongoose>mongodb"
+          ]
+        }
+      ],
+      "id": 1203,
+      "created": "2019-10-04T18:34:48.787Z",
+      "updated": "2019-10-18T16:52:03.441Z",
+      "deleted": null,
+      "title": "Denial of Service",
+      "found_by": {
+        "link": "",
+        "name": "Behnaz Hassanshahi",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Behnaz Hassanshahi",
+        "email": ""
+      },
+      "module_name": "mongodb",
+      "cves": [],
+      "vulnerable_versions": "<3.1.13",
+      "patched_versions": ">=3.1.13",
+      "overview": "Versions of `mongodb` prior to 3.1.13 are vulnerable to Denial of Service. The package fails to properly catch an exception when a collection name is invalid and the DB does not exist, crashing the application.",
+      "recommendation": "Upgrade to version 3.1.13 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-248",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 3,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1203"
+    },
+    "1300": {
+      "findings": [
+        {
+          "version": "4.0.11",
+          "paths": [
+            "newman>handlebars"
+          ]
+        }
+      ],
+      "id": 1300,
+      "created": "2019-10-30T15:57:14.032Z",
+      "updated": "2020-02-24T16:20:25.230Z",
+      "deleted": null,
+      "title": "Denial of Service",
+      "found_by": {
+        "link": "",
+        "name": "Nils Knappmeier",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Nils Knappmeier",
+        "email": ""
+      },
+      "module_name": "handlebars",
+      "cves": [],
+      "vulnerable_versions": ">=4.0.0 <4.4.5",
+      "patched_versions": ">=4.4.5",
+      "overview": "Affected versions of `handlebars` are vulnerable to Denial of Service. The package's parser may be forced into an endless loop while processing specially-crafted templates. This may allow attackers to exhaust system resources leading to Denial of Service.",
+      "recommendation": "Upgrade to version 4.4.5 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "moderate",
+      "cwe": "CWE-400",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1300"
+    },
+    "1316": {
+      "findings": [
+        {
+          "version": "4.0.11",
+          "paths": [
+            "newman>handlebars"
+          ]
+        }
+      ],
+      "id": 1316,
+      "created": "2019-11-14T15:29:41.991Z",
+      "updated": "2020-02-26T17:53:41.428Z",
+      "deleted": null,
+      "title": "Arbitrary Code Execution",
+      "found_by": {
+        "link": "",
+        "name": "François Lajeunesse-Robert",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "François Lajeunesse-Robert",
+        "email": ""
+      },
+      "module_name": "handlebars",
+      "cves": [],
+      "vulnerable_versions": "<3.0.8 || >=4.0.0 <4.5.2",
+      "patched_versions": ">=3.0.8 <4.0.0 || >=4.5.2",
+      "overview": "Versions of `handlebars` prior to 3.0.8 or 4.5.2 are vulnerable to Arbitrary Code Execution. The package's lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript in the system. It can be used to run arbitrary code in a server processing Handlebars templates or on a victim's browser (effectively serving as Cross-Site Scripting).\n\nThe following template can be used to demonstrate the vulnerability:  \n```{{#with \"constructor\"}}\n\t{{#with split as |a|}}\n\t\t{{pop (push \"alert('Vulnerable Handlebars JS');\")}}\n\t\t{{#with (concat (lookup join (slice 0 1)))}}\n\t\t\t{{#each (slice 2 3)}}\n\t\t\t\t{{#with (apply 0 a)}}\n\t\t\t\t\t{{.}}\n\t\t\t\t{{/with}}\n\t\t\t{{/each}}\n\t\t{{/with}}\n\t{{/with}}\n{{/with}}```",
+      "recommendation": "Upgrade to version 3.0.8, 4.5.2 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-79",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 6,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1316"
+    },
+    "1324": {
+      "findings": [
+        {
+          "version": "4.0.11",
+          "paths": [
+            "newman>handlebars"
+          ]
+        }
+      ],
+      "id": 1324,
+      "created": "2019-11-18T19:06:46.461Z",
+      "updated": "2020-02-26T17:51:49.573Z",
+      "deleted": null,
+      "title": "Arbitrary Code Execution",
+      "found_by": {
+        "link": "",
+        "name": "Unknown",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Unknown",
+        "email": ""
+      },
+      "module_name": "handlebars",
+      "cves": [],
+      "vulnerable_versions": "<3.0.8 || >=4.0.0 <4.5.3",
+      "patched_versions": ">=3.0.8 <4.0.0 || >=4.5.3",
+      "overview": "Versions of `handlebars` prior to 3.0.8 or 4.5.3 are vulnerable to Arbitrary Code Execution. The package's lookup helper fails to properly validate templates, allowing attackers to submit templates that execute arbitrary JavaScript in the system. It is due to an incomplete fix for a [previous issue](https://www.npmjs.com/advisories/1316). This vulnerability can be used to run arbitrary code in a server processing Handlebars templates or on a victim's browser (effectively serving as Cross-Site Scripting).",
+      "recommendation": "Upgrade to version 3.0.8, 4.5.3 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-79",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 4,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1324"
+    },
+    "1325": {
+      "findings": [
+        {
+          "version": "4.0.11",
+          "paths": [
+            "newman>handlebars"
+          ]
+        }
+      ],
+      "id": 1325,
+      "created": "2019-11-18T19:42:01.445Z",
+      "updated": "2020-02-26T17:55:51.120Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "link": "",
+        "name": "Vladyslav Babkin",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Vladyslav Babkin",
+        "email": ""
+      },
+      "module_name": "handlebars",
+      "cves": [],
+      "vulnerable_versions": "<3.0.8 || >=4.0.0 <4.5.3",
+      "patched_versions": ">=3.0.8 <4.0.0 || >=4.5.3",
+      "overview": "Versions of `handlebars` prior to 3.0.8 or 4.5.3 are vulnerable to prototype pollution. It is possible to add or modify properties to the Object prototype through a malicious template. This may allow attackers to crash the application or execute Arbitrary Code in specific conditions.",
+      "recommendation": "Upgrade to version 3.0.8, 4.5.3 or later.",
+      "references": "",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 4,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1325"
+    },
+    "1464": {
+      "findings": [
+        {
+          "version": "2.0.5",
+          "paths": [
+            "request>hawk>cryptiles"
+          ]
+        },
+        {
+          "version": "3.1.4",
+          "paths": [
+            "newman>postman-request>hawk>cryptiles",
+            "newman>postman-runtime>postman-request>hawk>cryptiles"
+          ]
+        },
+        {
+          "version": "3.1.4",
+          "paths": [
+            "newman>postman-runtime>hawk>cryptiles"
+          ]
+        }
+      ],
+      "id": 1464,
+      "created": "2020-01-23T18:13:40.195Z",
+      "updated": "2020-01-30T20:36:38.722Z",
+      "deleted": null,
+      "title": "Insufficient Entropy",
+      "found_by": {
+        "link": "",
+        "name": "Unknown",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Unknown",
+        "email": ""
+      },
+      "module_name": "cryptiles",
+      "cves": [
+        "CVE-2018-1000620"
+      ],
+      "vulnerable_versions": "<4.1.2",
+      "patched_versions": ">=4.1.2",
+      "overview": "Versions of `cryptiles` prior to 4.1.2 are vulnerable to Insufficient Entropy. The `randomDigits()` method does not provide sufficient entropy and its generates digits that are not evenly distributed.",
+      "recommendation": "Upgrade to version 4.1.2. The package is deprecated and has been moved to `@hapi/cryptiles` and it is strongly recommended to use the maintained package.",
+      "references": "- [GitHub PR](https://github.com/hapijs/cryptiles/issues/34)",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-331",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 4,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1464"
+    },
+    "1469": {
+      "findings": [
+        {
+          "version": "6.1.0",
+          "paths": [
+            "body-parser>qs"
+          ]
+        },
+        {
+          "version": "4.0.0",
+          "paths": [
+            "express>qs"
+          ]
+        }
+      ],
+      "id": 1469,
+      "created": "2020-02-10T19:09:50.604Z",
+      "updated": "2020-02-14T22:24:16.925Z",
+      "deleted": null,
+      "title": "Prototype Pollution Protection Bypass",
+      "found_by": {
+        "link": "",
+        "name": "Unknown",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Unknown",
+        "email": ""
+      },
+      "module_name": "qs",
+      "cves": [
+        "CVE-2017-1000048"
+      ],
+      "vulnerable_versions": "<6.0.4 || >=6.1.0 <6.1.2 || >=6.2.0 <6.2.3 || >=6.3.0 <6.3.2",
+      "patched_versions": ">=6.0.4 <6.1.0 || >=6.1.2 <6.2.0 || >=6.2.3 <6.3.0 || >=6.3.2",
+      "overview": "Affected version of `qs` are vulnerable to Prototype Pollution because it is possible to bypass the protection. The `qs.parse` function fails to properly prevent an object's prototype to be altered when parsing arbitrary input. Input containing `[` or `]` may bypass the prototype pollution protection and alter the Object prototype. This allows attackers to override properties that will exist in all objects, which may lead to Denial of Service or Remote Code Execution in specific circumstances.",
+      "recommendation": "Upgrade to 6.0.4, 6.1.2, 6.2.3, 6.3.2 or later.",
+      "references": "- [GitHub Issue](https://github.com/ljharb/qs/issues/200)\n- [Snyk Report](https://snyk.io/vuln/npm:qs:20170213)",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 4,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1469"
+    },
+    "1523": {
+      "findings": [
+        {
+          "version": "3.10.1",
+          "paths": [
+            "express-jwt>lodash"
+          ]
+        },
+        {
+          "version": "4.17.9",
+          "paths": [
+            "newman>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-collection>lodash",
+            "newman>postman-runtime>postman-collection>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-collection-transformer>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-runtime>async>lodash",
+            "newman>postman-runtime>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-runtime>postman-sandbox>lodash"
+          ]
+        },
+        {
+          "version": "4.17.10",
+          "paths": [
+            "newman>postman-runtime>postman-sandbox>uvm>lodash"
+          ]
+        }
+      ],
+      "id": 1523,
+      "created": "2020-05-20T01:36:49.357Z",
+      "updated": "2020-07-10T19:23:46.395Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "link": "",
+        "name": "posix",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "posix",
+        "email": ""
+      },
+      "module_name": "lodash",
+      "cves": [
+        "CVE-2019-10744"
+      ],
+      "vulnerable_versions": "<4.17.19",
+      "patched_versions": ">=4.17.19",
+      "overview": "Versions of `lodash` prior to 4.17.19 are vulnerable to Prototype Pollution.  The function `zipObjectDeep` allows a malicious user to modify the prototype of `Object` if the property identifiers are user-supplied. Being affected by this issue requires zipping objects based on user-provided property arrays.  \n\nThis vulnerability causes the addition or modification of an existing property that will exist on all objects and may lead to Denial of Service or Code Execution under specific circumstances.",
+      "recommendation": "Upgrade to version 4.17.19 or later.",
+      "references": "- [HackerOne Report](https://hackerone.com/reports/712065)\n- [GitHub Issue](https://github.com/lodash/lodash/issues/4744)",
+      "access": "public",
+      "severity": "low",
+      "cwe": "CWE-471",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 3,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1523"
+    },
+    "1555": {
+      "findings": [
+        {
+          "version": "1.0.3",
+          "paths": [
+            "request>bl"
+          ]
+        }
+      ],
+      "id": 1555,
+      "created": "2020-09-08T18:24:53.638Z",
+      "updated": "2020-09-08T19:15:40.690Z",
+      "deleted": null,
+      "title": "Remote Memory Exposure",
+      "found_by": {
+        "link": "",
+        "name": "chalker",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "chalker",
+        "email": ""
+      },
+      "module_name": "bl",
+      "cves": [],
+      "vulnerable_versions": "<1.2.3 || >2.0.0 < 2.2.1 || >=3.0.0 <3.0.1 || >= 4.0.0 <4.0.3",
+      "patched_versions": ">=1.2.3 <2.0.0 || >=2.2.1 <3.0.0 || >=3.0.1 <4.0.0 || >=4.0.3",
+      "overview": "A buffer over-read vulnerability exists in bl <4.0.3, <3.0.1 <2.2.1 and <1.2.3 which could allow an attacker to supply user input (even typed) that if it ends up in consume() argument and can become negative, the BufferList state can be corrupted, tricking it into exposing uninitialized memory via regular .slice() calls.",
+      "recommendation": "Upgrade to version 4.0.3, 3.0.1, 2.2.1 or 1.2.3.",
+      "references": "- https://github.com/advisories/GHSA-pp7h-53gx-mx7r\n- https://nvd.nist.gov/vuln/detail/CVE-2020-8244\n- https://github.com/rvagg/bl/commit/8a8c13c880e2bef519133ea43e0e9b78b5d0c91e\n- https://github.com/rvagg/bl/commit/d3e240e3b8ba4048d3c76ef5fb9dd1f8872d3190\n- https://github.com/rvagg/bl/commit/dacc4ac7d5fcd6201bcf26fbd886951be9537466\n- https://hackerone.com/reports/966347",
+      "access": "public",
+      "severity": "high",
+      "cwe": "CWE-126",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 5,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1555"
+    },
+    "1649": {
+      "findings": [
+        {
+          "version": "1.10.0",
+          "paths": [
+            "mongoose>mquery"
+          ]
+        }
+      ],
+      "id": 1649,
+      "created": "2021-03-09T17:35:28.122Z",
+      "updated": "2021-03-09T17:35:28.122Z",
+      "deleted": null,
+      "title": "Prototype Pollution",
+      "found_by": {
+        "link": "",
+        "name": "Anonymous",
+        "email": ""
+      },
+      "reported_by": {
+        "link": "",
+        "name": "Anonymous",
+        "email": ""
+      },
+      "module_name": "mquery",
+      "cves": [
+        "CVE-2020-35149"
+      ],
+      "vulnerable_versions": "<3.2.3",
+      "patched_versions": ">=3.2.3",
+      "overview": "In `mquery` before version 3.2.3 there is a prototype pollution vulnerability because a special property (e.g., __proto__) can be copied during a merge or clone operation.",
+      "recommendation": "Upgrade to version 3.2.3 or later",
+      "references": "- [CVE](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-35149)\n- [GitHub Advisory](https://github.com/advisories/GHSA-45q2-34rf-mr94)",
+      "access": "public",
+      "severity": "moderate",
+      "cwe": "CWE-1321",
+      "metadata": {
+        "module_type": "",
+        "exploitability": 6,
+        "affected_components": ""
+      },
+      "url": "https://npmjs.com/advisories/1649"
+    }
+  },
+  "muted": [],
+  "metadata": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 35,
+      "moderate": 17,
+      "high": 38,
+      "critical": 1
+    },
+    "dependencies": 185,
+    "devDependencies": 405,
+    "optionalDependencies": 19,
+    "totalDependencies": 590
+  },
+  "runId": "60a92b0d-f743-4353-b3b3-8d37901f15b0"
+}

@@ -7,6 +7,15 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr: '5'))
     }
     stages {
+        stage('clone') {
+            steps {
+                checkout([$class: 'GitSCM', 
+                    branches: [[name: 'jenkins']], 
+                    extensions: [], 
+                    userRemoteConfigs: [[url: 'https://github.com/eficode/cicd-dependency-scan-demo.git']]]
+                )
+            }
+        }
         stage('DotNet') {
             parallel {
                 /*
@@ -18,25 +27,28 @@ pipeline {
                     - Use --out to define path to output file.
                     - Use Jenkins plugin for publishing results in Jenkins. (Recommended)
                 */
-                stage('OWASP') {
+                stage('OWASP-DP') {
                     steps {
                         // Running parallel so need separate buil directories
                         sh 'mkdir owasp-build && cp -r example-projects/eShopOnWeb/* owasp-build/'
                         
-                        dir("owasp-build") {
-                            // Have to build it before scanning
-                            sh 'dotnet build eShopOnWeb.sln'
-                            // Now we can scan
-                            sh 'dependency-check.sh --project "eShopOnWeb" --scan ./ -f XML --out dependency-check-dotnet.xml'
-                            dependencyCheckPublisher pattern: 'dependency-check-dotnet.xml', 
-                                failedNewCritical: 1,
-                                failedNewHigh: 1,
-                                failedTotalCritical: 23,
-                                failedTotalHigh: 127,
-                                unstableTotalCritical: 10,
-                                unstableTotalHigh: 100,
-                                unstableTotalMedium: 25
-                        }
+                        // Todo: reenable when NVD db issue is fixed.
+                        //dir("owasp-build") {
+                        //    // Have to build it before scanning
+                        //    sh 'dotnet build eShopOnWeb.sln'
+                        //    // Now we can scan
+                        //    sh 'dependency-check.sh --project "eShopOnWeb" --scan ./ -f XML --out dependency-check-dotnet.xml'
+                        //    dependencyCheckPublisher pattern: 'dependency-check-dotnet.xml', 
+                        //        failedNewCritical: 1,
+                        //        failedNewHigh: 1,
+                        //        failedTotalCritical: 23,
+                        //        failedTotalHigh: 127,
+                        //        unstableTotalCritical: 10,
+                        //        unstableTotalHigh: 100,
+                        //        unstableTotalMedium: 25
+                        //    
+                        //    archiveArtifacts artifacts: "**/dependency-check-*.xml", followSymlinks: false
+                        //}
                     }
                 }
                 /*  
@@ -48,8 +60,8 @@ pipeline {
 
                     - Use --severity-threshold to filter vulnerabilities. low, medium, high
                     - Use --fail-on to filter on whether the vulnerbaility is upgradable or patchable
-                    - Use `snyk test` to execute vulnerability tests locally.
-                    - Use `snyk monitor` to upload to Dashboard and get notified of new vulnerabilities. 
+                    - Use `snyk-linux test` to execute vulnerability tests locally.
+                    - Use `snyk-linux monitor` to upload to Dashboard and get notified of new vulnerabilities. 
                 */
                 stage('Snyk') {
                     steps {
@@ -69,7 +81,7 @@ pipeline {
                                 targetFile: 'eShopOnWeb.sln'
 
                             // You can also execute snyk from the command line as below.
-                            // sh 'snyk test --severity-threshold=high --fail-on=upgradable --file=eShopOnWeb.sln'
+                            // sh 'snyk-linux test --severity-threshold=high --fail-on=upgradable --file=eShopOnWeb.sln'
                         }
                     }
                 }
@@ -184,10 +196,14 @@ pipeline {
             sh "echo Do something on failure!"
         }
         always {
-            // Archive some reports
-            archiveArtifacts artifacts: '**/dependency-check-*.xml',
-                followSymlinks: false
-
+            // Publish NPM and Yarn audit reports
+            publishHTML (target : [allowMissing: false,
+            alwaysLinkToLastBuild: true,
+            keepAll: true,
+            reportDir: 'example-projects/node-example-app',
+            reportFiles: 'npm-audit.html,yarn-audit.html',
+            reportName: 'Audits',
+            reportTitles: 'NPM Audit, Yarn Audit'])
             // Clean up non committed files.
             sh "git clean -fdx"
         }
