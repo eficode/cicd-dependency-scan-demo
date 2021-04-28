@@ -66,6 +66,36 @@ unclassified:
   location:
     url: http://jenkins.local.net
 
+  warningsParsers:
+    parsers:
+      - name: "NPM Audit parser"
+        id: npm-audit-parser
+        regexp: '\w+\t(\S+)\t(\w+)\t(\S| )+\t((\S| )+)\t(\S+)\t(\S+)'
+        script: |
+          import edu.hm.hafner.analysis.Severity
+
+          // Must map npm audit severities to next gen warbning plugin severities.
+          Severity severity;
+          switch(matcher.group(2)) {
+              case "critical":
+                  severity = Severity.ERROR
+              break
+              case "high":
+                  severity = Severity.WARNING_HIGH
+              break
+              case "moderate":
+                  severity = Severity.WARNING_NORMAL
+              break
+              case "low":
+                  severity = Severity.WARNING_LOW
+              break
+          }
+          return builder.setFileName(matcher.group(7))
+                        .setCategory(matcher.group(4))
+                        .setMessage(matcher.group(6))
+                        .setSeverity(severity).buildOptional(); 
+        example: 'install	handlebars	critical	npm install --save-dev newman@5.2.2	Prototype Pollution	https://npmjs.com/advisories/755	newman>handlebars	Y'
+
 # Security Configurations
 security:
   globalJobDslSecurityConfiguration:
