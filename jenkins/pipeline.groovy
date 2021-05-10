@@ -88,6 +88,8 @@ pipeline {
                                 snykInstallation: 'snyk',
                                 snykTokenId: 'token-snyk',
                                 targetFile: 'eShopOnWeb.sln'
+                            
+                            sh "cp snyk_report.html ${WORKSPACE}/reports/eShopOnWeb-snyk-report.html"
 
                             sh "cp snyk_report.html ${WORKSPACE}/reports/eShopOnWeb-snyk-report.html"
 
