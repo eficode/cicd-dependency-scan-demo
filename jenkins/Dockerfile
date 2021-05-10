@@ -1,5 +1,8 @@
+
+ARG JENKINS_VER
+
 # Note that Jenkins is based on Debian 9
-FROM jenkins/jenkins:2.277.2-lts
+FROM jenkins/jenkins:"${JENKINS_VER}"
 
 ENV JENKINS_ADMIN_USER=$JENKINS_ADMIN_USER \
     JENKINS_ADMIN_PASSWORD=$JENKINS_ADMIN_USER
@@ -68,8 +71,6 @@ RUN /usr/local/bin/install-plugins.sh < /usr/share/jenkins/ref/plugins.txt
 COPY config/jenkins.yml /var/jenkins_home/jenkins.yml
 RUN chown jenkins:jenkins /var/jenkins_home/jenkins.yml \
     && chmod 750 /var/jenkins_home/jenkins.yml
-
-#ENV PATH="${PATH}:/home/jenkins/tools/dependency-check/bin:/usr/local/bin/tools:/home/jenkins/tools"
 
 # Drop back down to Jenkins user
 USER jenkins
