@@ -21,10 +21,7 @@ jobs:
       - name: Build
         working-directory: ./example-projects/eShopOnWeb
         run: dotnet build eShopOnWeb.sln
-      - run: snyk auth
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+      - run: snyk auth SNYK_TOKEN
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/dotnet@master
-        env:
-          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+
