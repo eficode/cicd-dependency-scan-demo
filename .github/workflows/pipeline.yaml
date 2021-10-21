@@ -16,12 +16,6 @@ jobs:
         uses: actions/setup-dotnet@v1.7.2
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
-      - name: Install dependencies
-        working-directory: ./example-projects/eShopOnWeb
-        run: dotnet restore
       - name: Build
         working-directory: ./example-projects/eShopOnWeb
-        run: dotnet build --configuration Release --no-restore
-      - name: Test
-        working-directory: ./example-projects/eShopOnWeb
-        run: dotnet test --no-restore --verbosity normal
+        run: dotnet build eShopOnWeb.sln
