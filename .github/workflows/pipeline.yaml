@@ -12,7 +12,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - run: cd example-projects/eShopOnWeb
+      - run: ls
+      - run: pwd
+      - run: cd example-projects/eShopOnWeb/
       - run: ls
       - run: pwd
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
