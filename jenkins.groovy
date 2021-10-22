@@ -163,19 +163,19 @@ pipeline {
                         dir('package-managers-js') {
                             sh 'npm install'
                             sh 'npm audit --json | npm-audit-html || true' // Generate a report
-                            sh "mv npm-audit.html ${WORKSPACE}/reports"
+                            sh "cp npm-audit.html ${WORKSPACE}/reports"
                             sh 'npm audit || true' // Some output to the console
                             sh 'audit-ci --critical --package-manager yarn || true' // audit-ci will only fail if 1 or more critical issues are found
 
                             sh 'yarn install'
                             sh 'yarn audit --json | yarn-audit-html || true' // Generate a report
-                            sh "mv yarn-audit.html ${WORKSPACE}/reports"
+                            sh "cp yarn-audit.html ${WORKSPACE}/reports"
                             sh 'yarn audit || true' // Some output to the console
                             sh 'audit-ci --critical --package-manager yarn || true' // audit-ci will only fail if 1 or more critical issues are found
 
                             // Generate a report file with the parseable option.
                             sh 'npm audit --parseable > npm-audit-ng.txt || true'
-                            sh "mv npm-audit-ng.txt ${WORKSPACE}/reports"
+                            sh "cp npm-audit-ng.txt ${WORKSPACE}/reports"
                         }
                         // Use the created groovy parser to threshhold the issues with Next Generation Warnings plugin.
                         recordIssues(
