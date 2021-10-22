@@ -29,11 +29,11 @@ services:
       - "80:80"
   jenkins.local.net:
     container_name: jenkins
-    image: jenkins-libscan-tools:1.0.0
+    image: praqma/jenkins-libscan-tools:1.0.0
     build:
       context: .
       args: 
-        - JENKINS_VER=${JENKINS_VER:-2.277.2-lts}
+        - JENKINS_VER=${JENKINS_VER}
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.router1.rule=Host(`$JENKINS_SERVER_NAME`)"
