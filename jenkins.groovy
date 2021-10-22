@@ -84,7 +84,8 @@ pipeline {
                                 snykTokenId: 'token-snyk',
                                 targetFile: 'eShopOnWeb.sln'
 
-                            sh "cp snyk_report.html ${WORKSPACE}/reports/eShopOnWeb-snyk-report.html"
+                            //sh "cp snyk_report.html ${WORKSPACE}/reports/eShopOnWeb-snyk-report.html"
+                            sh "pwd && ls -ll"
 
                         // You can also execute snyk from the command line as below.
                         // sh 'snyk-linux test --severity-threshold=high --fail-on=upgradable --file=eShopOnWeb.sln'
@@ -237,7 +238,7 @@ pipeline {
             archiveArtifacts artifacts: 'reports/*', followSymlinks: false
 
             // Clean up
-            sh 'git clean -fdx'
+            //sh 'git clean -fdx'
         }
     }
 }

@@ -11,7 +11,6 @@ services:
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
-      - "--entrypoints.ssh-gitlab.address=:2224"
     stop_grace_period: 30s
     networks:
       default:
@@ -41,7 +40,7 @@ services:
       - "traefik.http.routers.router1.service=jenkins"
       - "traefik.http.services.jenkins.loadbalancer.server.port=8083"
     environment:
-      - JENKINS_VER=$JENKINS_VER:-2.277.2-lts
+      - JENKINS_VER=${JENKINS_VER}
       - JENKINS_SLAVE_AGENT_PORT=50000
       - JENKINS_OPTS="--httpPort=8083"
       - JENKINS_ADMIN_USER=$JENKINS_ADMIN_USER
