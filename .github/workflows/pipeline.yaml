@@ -37,3 +37,4 @@ jobs:
         with:
           sarif_file: snyk.sarif
 
+

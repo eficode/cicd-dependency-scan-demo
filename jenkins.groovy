@@ -84,8 +84,6 @@ pipeline {
                                 snykTokenId: 'token-snyk',
                                 targetFile: 'eShopOnWeb.sln'
 
-                            sh "cp snyk_report.html ${WORKSPACE}/reports/eShopOnWeb-snyk-report.html"
-
                         // You can also execute snyk from the command line as below.
                         // sh 'snyk-linux test --severity-threshold=high --fail-on=upgradable --file=eShopOnWeb.sln'
                         }
@@ -134,8 +132,6 @@ pipeline {
                                 snykInstallation: 'snyk',
                                 snykTokenId: 'token-snyk'
 
-                        sh "cp snyk_report.html ${WORKSPACE}/reports/js-snyk-report.html"
-
                         // You can use snyk cli also. See Jenkins Docker file for installation.
                         //sh 'snyk test --severity-threshold=high --fail-on=upgradable'
                         }
@@ -167,19 +163,19 @@ pipeline {
                         dir('package-managers-js') {
                             sh 'npm install'
                             sh 'npm audit --json | npm-audit-html || true' // Generate a report
-                            sh "mv npm-audit.html ${WORKSPACE}/reports"
+                            sh "cp npm-audit.html ${WORKSPACE}/reports"
                             sh 'npm audit || true' // Some output to the console
                             sh 'audit-ci --critical --package-manager yarn || true' // audit-ci will only fail if 1 or more critical issues are found
 
                             sh 'yarn install'
                             sh 'yarn audit --json | yarn-audit-html || true' // Generate a report
-                            sh "mv yarn-audit.html ${WORKSPACE}/reports"
+                            sh "cp yarn-audit.html ${WORKSPACE}/reports"
                             sh 'yarn audit || true' // Some output to the console
                             sh 'audit-ci --critical --package-manager yarn || true' // audit-ci will only fail if 1 or more critical issues are found
 
                             // Generate a report file with the parseable option.
                             sh 'npm audit --parseable > npm-audit-ng.txt || true'
-                            sh "mv npm-audit-ng.txt ${WORKSPACE}/reports"
+                            sh "cp npm-audit-ng.txt ${WORKSPACE}/reports"
                         }
                         // Use the created groovy parser to threshhold the issues with Next Generation Warnings plugin.
                         recordIssues(
