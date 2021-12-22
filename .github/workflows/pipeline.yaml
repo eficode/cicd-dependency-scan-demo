@@ -3,8 +3,6 @@ name: dotnet package
 on:
   workflow_dispatch:
   push:
-env:
-  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
 jobs:
   build:
