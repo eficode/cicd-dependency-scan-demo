@@ -30,7 +30,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --file=example-projects/eShopOnWeb/eShopOnWeb.sln
+          args: --file=example-projects/eShopOnWeb/eShopOnWeb.sln --sarif-file-output=snyk.sarif
       
       - name: Upload result to GitHub Code Scanning
         uses: github/codeql-action/upload-sarif@v1
