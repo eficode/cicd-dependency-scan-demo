@@ -28,9 +28,10 @@ jobs:
 
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/dotnet@master
+        run: npx snyk test --severity-threshold=high --file=example-projects/eShopOnWeb/eShopOnWeb.sln
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
-        with:
-          args: --file=example-projects/eShopOnWeb/eShopOnWeb.sln
+        #with:
+        #  args: --file=example-projects/eShopOnWeb/eShopOnWeb.sln
         
 
