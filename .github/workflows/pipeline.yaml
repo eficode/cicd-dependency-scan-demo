@@ -26,9 +26,6 @@ jobs:
         working-directory: example-projects/eShopOnWeb
         run: dotnet build eShopOnWeb.sln
 
-      - name: Run snyk from command line
-        run: snyk auth ${{ secrets.SNYK_TOKEN }} && snyk test --file=example-projects/eShopOnWeb/eShopOnWeb.sln
-        
       - name: Run Snyk to check for vulnerabilities
         uses: snyk/actions/dotnet@master
         env:
