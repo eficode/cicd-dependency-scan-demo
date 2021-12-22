@@ -31,6 +31,6 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
         with:
-          args: --file=${{ GITHUB_WORKSPACE }}/example-projects/eShopOnWeb/eShopOnWeb.sln
+          args: --file=example-projects/eShopOnWeb/eShopOnWeb.sln
         
 
