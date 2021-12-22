@@ -1,6 +1,8 @@
 name: dotnet package
 
-on: [push]
+on:
+  workflow_dispatch:
+  push:
 env:
   SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
 
@@ -14,17 +16,22 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - name: Setup .NET Core SDK ${{ matrix.dotnet-version }}
         uses: actions/setup-dotnet@v1.7.2
         with:
           dotnet-version: ${{ matrix.dotnet-version }}
+
       - name: Build
-        working-directory: ./example-projects/eShopOnWeb
+        working-directory: example-projects/eShopOnWeb
         run: dotnet build eShopOnWeb.sln
-      #- run: snyk auth ${{ secrets.SNYK_TOKEN }}
+
       - name: Run Snyk to check for vulnerabilities
+        working-directory: example-projects/eShopOnWeb
         uses: snyk/actions/dotnet@master
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+        with:
+          args: --file=eShopOnWeb.sln
         
 
